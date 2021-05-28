@@ -1,0 +1,11 @@
+破解方法：
+
+1.运行AD15KeyGen，点击“打开模板”，加载license.ini，如想修改注册名，只需修改：
+TransactorName=Your Name
+其中Your Name用你自己的名字替换，其它参数在单机版的情况下无需修改；
+2.点击“生成协议”，保存生成的alf文件(文件名任意，如“jack ”)，并将其放到你的安装目录下；
+3.将patch.exe放到你的安装目录下，运行patch，对安装目录下的dxp.exe文件补丁，注意运行破解时软件没有运行；
+4.启动DXP，运行菜单DXP->My Account，点击Add Standalone License file，加载前面生成的license（.alf）文件后即能正常使用了。
+注意：
+1.局域网内用同一license不再提示冲突
+2.仅供学习研究使用，勿用于非法用途。
