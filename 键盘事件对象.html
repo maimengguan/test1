@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p>请按下“回车”健</p>
+<script>
+    document.addEventListener('keyup',function (e){
+        // console.log(e);
+        //keyCode 获取对应的码值。
+        //keyup,keydown 事件不区分字母的大小写
+        //keypress 是区分大小写的
+        //利用keycode返回的马志来判断用户按下哪个键
+        console.log(e.keyCode);
+    })
+    document.addEventListener('keypress',function (e){
+        console.log(e.keyCode);
+        if (e.keyCode==13){
+            alert('您按下了回车健')
+        }else {
+            alert('你的输入有误')
+        }
+    })
+</script>
+</body>
+</html>

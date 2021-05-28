@@ -14,7 +14,16 @@
 <body>
 
 <script>
-
+    document.addEventListener('keyup',function (){
+        console.log('我弹起触发');
+    })
+    document.addEventListener('keydown',function (){
+        console.log('我按下触发');
+    })
+    document.addEventListener('keypress',function (){
+        console.log('我按下press');//不能识别功能健
+    })
+//    三个键盘事件的执行顺序是  keydown=>keypress=>keyup
 </script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input{
+            margin: 100px auto;
+            width: 200px;
+            height: 50px;
+            outline: none;
+        }
+        body{
+            height: 3000px;
+        }
+    </style>
+</head>
+<body>
+<input type="text">
+<script>
+    var input =document.querySelector('input');
+    document.addEventListener('keyup',function (e){
+        if (e.keyCode==83){
+            input.focus();
+        }
+    })
+</script>
+</body>
+</html>
