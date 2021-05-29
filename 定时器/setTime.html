@@ -5,6 +5,28 @@
     <title>Title</title>
 </head>
 <body>
+  <pre>
 
+  </pre>
+  <script>
+    // window.setTimeout(调用函数，【演示的毫秒数】)定时器 单位是毫秒
+  //  setTimeout()方法使用于设置一个定时器，该定时器在定时器的到期后执行调用函数
+  //  window在调用是可以省略
+  //  这个调用函数可以直接写函数名
+  //  页面中可能出现很多的定时器 我们给每个定时器加标识符（名字）
+
+
+    //第一种写法
+    setTimeout(function (){
+        console.log('调用这个函数');
+    },2000)
+
+    //第二中写法
+    function fn(){
+        console.log('直接调用');
+    }
+    setTimeout(fn,3000);//直接调用
+    var time1=setTimeout(fn,4000);
+  </script>
 </body>
 </html>
