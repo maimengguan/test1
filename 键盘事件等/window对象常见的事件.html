@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>窗口加载事件</title>
+    <script>
+        window.onload=function (){
+            var btn=document.querySelector('button');
+            btn.onclick=function (){
+                console.log('dianji')
+            }
+        }
+    </script>
+</head>
+<body>
+<p>window.onload是窗口加载事件，当文档内容完全加载完成回触发该事件（包括图像，脚本文件，css 等）就调用处理
+只能写一次
+使用事件侦听就不会有冲突
+</p>
+<p>
+    docyment.addEventListener('DOMContentLoaded',function(){
+    })先加载dom元素在加载图片那些  更快
+</p>
+<h1>load等页面内容全部加载完毕，包含页面dom元素图片flash css等</h1>
+<h1>DOMContentLoaded是dom加载完毕，不包含图片falsh css等就可以执行比load更快</h1>
+<button>点击</button>
+
+</body>
+</html>

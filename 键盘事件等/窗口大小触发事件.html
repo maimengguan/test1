@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>窗口大小触发事件</title>
+  <script>
+    window.onload=function (){
+      var box=document.querySelector('.box');
+      window.addEventListener('resize',function (){
+        console.log('变化了');
+        var i=window.innerWidth;
+        console.log(i)
+        if (i>1000){
+          box.style.backgroundColor='blue';
+        }
+      })
+
+    }
+  </script>
+  <style>
+    .box{
+      width: 400px;
+      height: 400px;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

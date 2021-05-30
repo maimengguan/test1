@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<button class="begin">开启定时器</button>
+<button class="stop">停止定时器</button>
+<script>
+ var begin=document.querySelector('.begin');
+ var stop=document.querySelector('.stop');
+ var time1=null;//全局变量null是一个空对象
+  begin.addEventListener('click',function (){
+    // var time1=setInterval(function (){//（不能在这里定义time1）
+      time1=setInterval(function (){
+      console.log('每隔一秒打印一次') ;
+    },1000)
+ })
+ stop.addEventListener('click',function (){
+   clearTimeout(time1);//不能直接调用因为time1函数是在上面函数定义的没有全局变量；
+
+ })
+</script>
+</body>
+</html>

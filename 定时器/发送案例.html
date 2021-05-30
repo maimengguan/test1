@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <input type="text" placeholder="请输入手机号码">
+  <button>发送</button>
+  <script>
+      var input =document.querySelector('input');
+      var btn=document.querySelector('button');
+      var time=3;
+      var timer=null;
+      btn.addEventListener('click',function (){
+          this.disabled=true;
+          // this.innerHTML='还剩下10秒';
+         timer= setInterval(function (){
+             if (time==0){
+                 clearInterval(timer);
+                 btn.disabled=false;
+                 btn.innerHTML='发送';
+                 time=3;//千万不要忘记了这个time要重新复原
+
+             }else {
+                 btn.innerHTML='还剩'+time+'秒'
+                 time--;
+             }
+          },1000)
+      })
+  </script>
+</body>
+</html>
