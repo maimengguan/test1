@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+ <button>
+   点击停止定时器
+ </button>
+<script>
+<!--  停止定时器  clearTimeout(time1); 括号内写定时器的名字所以我们做定时器的时候要给定时器娶个名字-->
+  var btn=document.querySelector('button');
+  var time1=setTimeout(function (){
+    console.log('爆炸');
+  },5000);
+  btn.addEventListener('click',function (){
+    clearTimeout(time1);
+  })
+</script>
+</body>
+</html>

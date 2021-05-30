@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>setinterval</title>
+</head>
+<body>
+<script>
+ // window.setInterval(回调函数，【间隔事件】)；
+ // setinterval()方法重复调用一个函数，每个这个时间就去调用一次回调函数
+ //settime()延时时间到了，就去调用这个回调函数；
+ //serinterval()是每隔一秒就调用一次这个回调函数重复调用；
+ setInterval(function (){
+     console.log('每个一秒打印一次');
+ },1000);
+</script>
+</body>
+</html>

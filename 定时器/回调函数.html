@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .new{
+            width: 100px;
+            height: 400px;
+            background-color: pink;
+            display: block;
+        }
+        button{
+            float: right;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="new">
+    <h1>五秒之后自动关闭这个函数</h1>
+    <button>✖</button>
+</div>
+<script>
+<!--    回调函数-->
+//五秒之后自动关闭广告
+    var neww = document.querySelector('.new');
+    var btn=document.querySelector('button');
+    function fn(){
+        neww.style.display='none'
+    }
+    btn.addEventListener('click',function (){
+        neww.style.display='none'
+    })
+    var settimeout1 =setTimeout(fn,5000);
+console.log(window)
+</script>
+</body>
+</html>
